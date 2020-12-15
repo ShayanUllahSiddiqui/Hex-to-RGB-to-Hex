@@ -172,3 +172,53 @@ header{
 	margin-right: 10px
 }
 
+*:focus {
+	outline: none;
+}
+
+.pure-form {
+	margin-top: 15rem;
+	display: flex;
+	justify-content: center;
+}
+
+.main-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 4px;
+}
+
+.main-form input {
+	margin: 8px;
+	width: 35rem;
+	height: 1.8rem;
+	border-radius: 8px;
+	border: 2px solid #ffffff;
+	margin-bottom: 20px;
+}
+
+.main-form input::placeholder:focus {
+	text-transform: uppercase;
+	border: none;
+	text-decoration: none;
+	margin-top: 2px;
+}
+
+.main-form button {
+	width: 5rem;
+	height: 2rem;
+	border-radius: 4px;
+	border: 1.5px solid rgb(247, 64, 64);
+	background-color: rgb(247, 64, 64);
+	color: white;
+	margin-bottom: 3rem;
+}
+
+.main-form button:hover {
+	background-color: red;
+	transition: all 1s;
+	width: 4.7rem;
+	height: 1.7rem;
+}
