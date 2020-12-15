@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="color slider hex rgb. hex to rgb. rgb to hex">
+	<title>Title</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="main.js" async></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		  rel="stylesheet">
+</head>
+<body>
+<div id="loading"
+	 style="width: 100%; height: 100%; position: absolute; background: #1f232a; z-index: 1; text-align:center">
+	Loading...
+</div>
+  
+<main class="center">
+  <header>RGB ⇄ HEX</header>
+	<!--     colored rectangle -->
+	<div id="coloredWindow">
+		<button id="getRandom">Random<br>color</button>
+	</div>
+
+	<div id="sliders">
+		<div id="sliderRed"></div>
+
+		<div id="sliderGreen"></div>
+
+		<div id="sliderBlue"></div>
+	</div>
+
+	<div id="text">
+		<div id="rgb" class='rgb' data-tip='copied!'>
+			<button class="copy"><i class="material-icons">file_copy</i></button>
+			RGB: (
+			<input id='rgbRed' type="text"/>,
+			<input id='rgbGreen' type="text"/>,
+			<input id='rgbBlue' type="text"/>)
+		</div>
+
+		<div id="hex" class='hex' data-tip='copied!'>
+			<button class="copy"><i class="material-icons">file_copy</i></button>
+			HEX: #
+			<input id='hexRed' type="text"/>
+			<input id='hexGreen' type="text"/>
+			<input id='hexBlue' type="text"/>
+		</div>
+	</div>
+</main>
+</body>
+
+</html>
